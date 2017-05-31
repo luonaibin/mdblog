@@ -10,8 +10,75 @@
 <!--[if lt IE 9]>
 <script src="js/modernizr.js"></script>
 <![endif]-->
+
+<style type="text/css">
+.col-md-8{
+	min-height: 482px;
+}
+pre{
+	background-color: #DAF9CA;
+	color: #376956;
+}
+ 
+.lineB{
+	background-color: #dbffdb;
+}
+.line{
+	float:left;
+	width:25px;
+	background-color: #DAF9BA;
+}
+.linenum{
+	color: rgba(27,31,35,0.3);
+	float: left;
+	padding-left: 3px;
+	width: 25px;
+	-moz-user-select: none;  
+	-webkit-user-select: none;  
+	-ms-user-select: none;  
+	-khtml-user-select: none;  
+	user-select: none;
+}
+#fh5co-header-section.fh5co-scrolled{
+	background: #C3C3F3;
+}
+.hiddened{top: -90px;}
+.showed{top:0;z-index: 9999;}
+</style>
+
+
 </head>
 <body>
+
+<script src="http://7xku3c.com1.z0.glb.clouddn.com/static/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("pre").each(function(index, elem) {
+		var content = $(this).text();
+		var numctx = "<div class='line'>";
+		var lines = content.split("\n");
+		var result = '';
+		var ctx = '<code>';
+		if (lines.length<4) {return}
+		for (var i = 0; i < lines.length-1; i++) {
+			numctx += "<div class='linenum'>" + (i+1) + "</div>";
+			var c = lines[i];
+			if (c=="") {c="<br>";}
+			if (i%2==0) {
+				ctx+= "<div class='lineA'>" + c+"</div>";
+			}else{
+				ctx+= "<div class='lineB'>" + c+"</div>";
+			}
+		}
+		numctx += "</div>";
+		ctx += "</code>"
+		result += numctx + ctx;
+		$(this).html(result);
+	});
+	
+});
+</script>
+
 <header>
  <nav id="nav">
    <ul>

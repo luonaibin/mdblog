@@ -1,8 +1,6 @@
----
-layout:     post
-title:      "剑指offer-Java实现(1--20)"
-date:       2015-08-28
----
+# 剑指offer-Java实现(1--20)
+
+_2015-08-28_
 
 <style type="text/css">
 p{
@@ -13,7 +11,6 @@ p{
 }
 </style>
 
---------
 
 ### 一、二维数组中的查找
 
