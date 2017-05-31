@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Next VCard</title>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<div id="container">
+		<!-- Header -->
+		<header class="clear-fix">
+			<div id="logo">
+				<a href="index.html"><img alt="Next VCard" src="img/logo.png"></a>
+			</div>
+
+			
+			<div id="header-inner">
+				<!-- Navigation -->
+				<nav>
+					<ul>
+						<li><a class="active" href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#portfolio">Protfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<!-- End Navigation -->
+
+			</div>
+
+		</header>
+		<!-- End Header -->
+
+		<div id="loading-container">
+			<div id="loading"></div>
+		</div>
+
+		<!-- Content -->
+		<div id="content" class="clear-fix">
+
+
+			<!-- Contact -->
+			<section id="contact">
+				<div class="left">
+					{{.MDContent}}
+				</div>
+
+				<div id="map-container">
+					<div id="map"></div>
+					<div class="top-shadow"></div>
+					<div class="left-shadow"></div>
+					<div class="right-shadow"></div>
+					<div class="bottom-shadow"></div>
+				</div>
+			</section>
+			<!-- End Contact -->
+		</div>
+		<!-- End Content -->
+
+		<!-- Footer -->
+		<footer class="clear-fix">
+			<p>&copy; 2013 - Next Vcard - Powered by Next Wordpress Themes</p>
+		</footer>
+		<!-- End Footer -->
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
